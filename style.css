@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f5f7fa,#c3cfe2);
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+.hero{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    letter-spacing:1px;
+}
+
+/* Profile */
+
+.profile-section{
+    max-width:1000px;
+    margin:50px auto;
+    text-align:center;
+    padding:0 20px;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #2575fc;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+.about{
+    max-width:700px;
+    margin:25px auto;
+    font-size:1.05rem;
+}
+
+/* Skills */
+
+.skills{
+    margin-top:25px;
+}
+
+.skills span{
+    display:inline-block;
+    margin:8px;
+    padding:12px 22px;
+    background:linear-gradient(135deg,#ff6b6b,#ff8e53);
+    color:white;
+    font-weight:bold;
+    border-radius:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Sections */
+
+.projects,
+.resume-section,
+.contact{
+    max-width:1000px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.projects h2,
+.resume-section h2,
+.contact h2,
+.profile-section h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2575fc;
+}
+
+/* Project Cards */
+
+.project-card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    color:#6a11cb;
+    margin-bottom:10px;
+}
+
+/* Resume Button */
+
+.resume-section{
+    text-align:center;
+}
+
+.download-btn{
+    display:inline-block;
+    padding:14px 35px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.download-btn:hover{
+    transform:scale(1.05);
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom:50px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .profile-img{
+        width:180px;
+        height:180px;
+    }
+
+    .skills span{
+        display:block;
+        width:220px;
+        margin:10px auto;
+    }
+}
